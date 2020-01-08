@@ -23,6 +23,15 @@ How to run the projet
 What can you do? 
 -----
 
+```graphql
+mutation {
+createUser(name:"jeanne", password:"jean") {
+id
+name
+}
+}
+```
+
 
 
 
