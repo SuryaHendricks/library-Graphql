@@ -29,7 +29,7 @@ What can you do?
 mutation {
   createUser(name:"jeanne", password:"jean") {
     id
-        name  
+    name  
   }
 }
 ```
