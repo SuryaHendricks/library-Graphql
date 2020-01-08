@@ -23,12 +23,52 @@ How to run the projet
 What can you do? 
 -----
 
+1. Create a user
+
 ```graphql
 mutation {
-createUser(name:"jeanne", password:"jean") {
-id
-name
+  createUser(name:"jeanne", password:"jean") {
+    id
+        name  
+  }
 }
+```
+2. Login
+
+```graphql
+query{
+  login(name: "jean", password: "jean") {
+    token
+  }
+}
+```
+3. Insert the Token in the HTTP Headers field
+
+```graphql
+{
+  "data": {
+    "login": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMGEwMmE5ZjIyYTJjNzJiODAxN2Y3ZSIsImlhdCI6MTU3ODQ3Mzk2NCwiZXhwIjoxNTc4NDg1OTY0fQ.cUODwsTLkTMSnza4NAWH3LJ3NTdgGspLKMRhZzixrY4"
+    }
+  }
+}
+```
+4. Perform queries and mutations such as
+
+```graphql
+query{
+  books {
+    title
+    id
+  }
+}
+```
+```graphql
+mutation{
+  createBook(title: "The never ending story", subtitle: "Tome 1"){
+    id
+    title
+  }
 }
 ```
 
