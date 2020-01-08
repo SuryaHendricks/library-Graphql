@@ -6,5 +6,13 @@ Library-Graphql
 
 Description
 ----
+A library management API. 
+
+Technologies
+---
+
+*GraphQL*, *NodeJS*, *Expres*, *MongoDB*, *JSW*
+
+
 
 
