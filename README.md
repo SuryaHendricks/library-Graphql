@@ -18,7 +18,7 @@ How to run the projet
 
 2. Launch the terminal from the project's root folder and type **npm run dev**.
 
-3. Navigate to [localhost:5000/graphql]. 
+3. Navigate to <localhost:5000/graphql>. 
 
 What can you do? 
 -----
