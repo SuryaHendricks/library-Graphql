@@ -42,7 +42,7 @@ query{
   }
 }
 ```
-3. Insert the Token in the HTTP Headers field
+3. Insert the Token in the HTTP **Headers field**
 
 ```graphql
 {
